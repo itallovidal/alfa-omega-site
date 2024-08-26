@@ -1,4 +1,4 @@
-import { styled } from '../../styles'
+import { styled } from '../../styles/theme.ts'
 
 export const WrapperDesktop = styled('div', {
   width: '100%',

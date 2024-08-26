@@ -4,7 +4,7 @@ import Profile from '../../assets/profile.png'
 
 export function About() {
   return (
-    <AboutWrapper>
+    <AboutWrapper background={'black'}>
       <div>
         <ProfileWrapper>
           <picture>

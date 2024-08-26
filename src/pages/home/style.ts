@@ -1,9 +1,23 @@
-import { styled } from '../../styles'
+import { styled } from '../../styles/theme.ts'
 
-export const AboutWrapper = styled('section', {
+export const Wrapper = styled('section', {
   width: '100%',
-  padding: '1rem',
-  background: 'black',
+  padding: '5rem',
+
+  variants: {
+    background: {
+      white: {
+        background: 'white',
+      },
+      black: {
+        background: 'black',
+      },
+    },
+  },
+
+  defaultVariants: {
+    background: 'white',
+  },
 
   '& > div': {
     maxWidth: '68.75rem',
@@ -11,6 +25,40 @@ export const AboutWrapper = styled('section', {
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
+  },
+})
+
+export const AboutWrapper = styled(Wrapper, {})
+
+export const BoxWrapper = styled('div', {
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '1rem',
+})
+
+export const ServicesWrapper = styled(Wrapper, {
+  '& > div': {
+    flexDirection: 'column',
+    gap: '2rem',
+    alignItems: 'center',
+  },
+})
+
+export const ServiceBox = styled('div', {
+  backgroundColor: 'black',
+  padding: '1.4rem',
+  color: 'white',
+
+  width: 'calc(50% - .5rem)',
+
+  h2: {
+    fontSize: '2rem',
+    fontWeight: 'normal',
+  },
+
+  p: {
+    marginBlock: '1.4rem',
+    lineHeight: '1.6rem',
   },
 })
 

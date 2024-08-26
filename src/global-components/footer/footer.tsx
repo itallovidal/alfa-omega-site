@@ -17,7 +17,7 @@ export function Footer() {
           </div>
         </AddressWrapper>
         <ContactWrapper>
-        <Link to={'/#home'}>Início</Link>
+          <Link to={'/#home'}>Início</Link>
           <Link to={'/#services'}> Serviços</Link>
           <Link to={'/#traffic'}> Tráfego Pago</Link>
           <Link to={'/#about'}>Sobre</Link>

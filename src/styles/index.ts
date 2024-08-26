@@ -1,13 +1,4 @@
-import { createStitches } from '@stitches/react'
-
-export const { styled, globalCss } = createStitches({
-  theme: {
-    colors: {
-      white: '#fff',
-      minhaCor: '#121214',
-    } as const,
-  },
-})
+import { globalCss, styled } from './theme.ts'
 
 export const globalStyles = globalCss({
   '*': {
@@ -52,5 +43,40 @@ export const globalStyles = globalCss({
       maxWidth: '100%',
       maxHeight: '100%',
     },
+  },
+})
+
+export const Button = styled('button', {
+  width: 'fit-content',
+  padding: '1rem',
+  fontSize: '1rem',
+  cursor: 'pointer',
+  transition: 'all 0.3s',
+
+  variants: {
+    variantType: {
+      dark: {
+        background: 'black',
+        color: 'white',
+
+        '&:hover': {
+          background: 'white',
+          color: 'black',
+        },
+      },
+      light: {
+        background: 'white',
+        color: 'black',
+
+        '&:hover': {
+          background: 'black',
+          color: 'white',
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    variantType: 'dark',
   },
 })
