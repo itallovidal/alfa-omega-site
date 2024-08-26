@@ -1,7 +1,7 @@
+import { Button } from '../../../styles'
 import { BoxWrapper, ServiceBox, ServicesWrapper } from './style.ts'
-import { Button } from '../../styles'
 
-export function Services() {
+export function ServicesDetails() {
   return (
     <ServicesWrapper>
       <div>

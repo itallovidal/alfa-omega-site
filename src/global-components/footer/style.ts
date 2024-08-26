@@ -1,6 +1,7 @@
 import { styled } from '../../styles/theme.ts'
+import { Wrapper } from '../../styles'
 
-export const Wrapper = styled('footer', {
+export const FooterWrapper = styled(Wrapper, {
   width: '100%',
   padding: '2rem',
   background: 'white',

@@ -1,6 +1,6 @@
 import React from 'react'
-import { AboutWrapper, AboutDetails, ProfileWrapper } from './style.ts'
-import Profile from '../../assets/profile.png'
+import Profile from '../../../assets/profile.png'
+import { AboutDetails, AboutWrapper, ProfileWrapper } from './style.ts'
 
 export function About() {
   return (

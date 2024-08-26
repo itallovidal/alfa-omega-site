@@ -80,3 +80,31 @@ export const Button = styled('button', {
     variantType: 'dark',
   },
 })
+
+export const Wrapper = styled('section', {
+  width: '100%',
+  padding: '5rem',
+
+  variants: {
+    background: {
+      white: {
+        background: 'white',
+      },
+      black: {
+        background: 'black',
+      },
+    },
+  },
+
+  defaultVariants: {
+    background: 'white',
+  },
+
+  '& > div': {
+    maxWidth: '68.75rem',
+    width: '100%',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+})
