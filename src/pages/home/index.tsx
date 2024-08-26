@@ -1,5 +1,10 @@
 import React from 'react'
+import { About } from './about.tsx'
 
 export function Home() {
-  return <div>corpo da home</div>
+  return (
+    <div>
+      <About />
+    </div>
+  )
 }
