@@ -9,8 +9,6 @@ import { CloseIcon } from '../../assets/CloseIcon.tsx'
 export function NavbarMobile() {
   const [isOpen, setIsOpen] = useState(false)
 
-  console.log(isOpen)
-
   return (
     <WrapperMobile display={isOpen ? 'open' : 'closed'}>
       <Button onClick={() => setIsOpen((prev) => !prev)}>
