@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Profile from '../../../assets/profile.png'
 import { AboutDetails, AboutWrapper, ProfileWrapper } from './style.ts'
 
-export function About() {
+export const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <AboutWrapper background={'gray'}>
+    <AboutWrapper ref={ref} id={'about'} background={'gray'}>
       <div>
         <ProfileWrapper>
           <picture>
@@ -29,4 +29,4 @@ export function About() {
       </div>
     </AboutWrapper>
   )
-}
+})

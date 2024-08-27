@@ -1,10 +1,11 @@
 import { Tech, TechInfoWrapper } from './style.ts'
 import Tech1 from '../../../assets/tech_1.svg'
 import Tech2 from '../../../assets/tech_2.svg'
+import { forwardRef } from 'react'
 
-export function TechInfo() {
+export const TechInfo = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <TechInfoWrapper>
+    <TechInfoWrapper id={'techInfo'} ref={ref}>
       <div>
         <Tech>
           <div>
@@ -40,4 +41,4 @@ export function TechInfo() {
       </div>
     </TechInfoWrapper>
   )
-}
+})

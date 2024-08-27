@@ -1,9 +1,10 @@
 import { Button } from '../../../styles'
 import { BoxWrapper, ServiceBox, ServicesWrapper } from './style.ts'
+import { forwardRef } from 'react'
 
-export function ServicesDetails() {
+export const ServicesDetails = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <ServicesWrapper>
+    <ServicesWrapper ref={ref} id={'serviceDetails'}>
       <div>
         <BoxWrapper>
           <ServiceBox>
@@ -80,4 +81,4 @@ export function ServicesDetails() {
       </div>
     </ServicesWrapper>
   )
-}
+})

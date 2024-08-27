@@ -1,9 +1,10 @@
 import { CourseWrapper } from './style.ts'
 import { Button } from '../../../styles'
+import { forwardRef } from 'react'
 
-export function Course() {
+export const Course = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <CourseWrapper background={'black'}>
+    <CourseWrapper ref={ref} id={'course'} background={'black'}>
       <div>
         <h1>Curso de Tráfego Pago</h1>
         <h2>
@@ -28,4 +29,4 @@ export function Course() {
       </div>
     </CourseWrapper>
   )
-}
+})

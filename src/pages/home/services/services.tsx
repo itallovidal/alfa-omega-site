@@ -1,8 +1,9 @@
 import { ServiceList, ServicesWrapper } from './style.ts'
+import { forwardRef } from 'react'
 
-export function Services() {
+export const Services = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <ServicesWrapper background={'black'}>
+    <ServicesWrapper ref={ref} id={'services'} background={'gray'}>
       <div>
         <h1>Consultoria</h1>
 
@@ -22,4 +23,4 @@ export function Services() {
       </div>
     </ServicesWrapper>
   )
-}
+})
