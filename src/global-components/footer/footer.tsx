@@ -11,9 +11,9 @@ export function Footer() {
             <img src={AlfaLogo} alt="AlfaLogo" />
           </picture>
           <div>
-            <span>Copacabana</span>
-            <span>Rio de Janeiro - RJ, 22030001, BR</span>
-            <span>contato@alfaeomegatecnologia.com</span>
+            <p>Copacabana</p>
+            <p>Rio de Janeiro - RJ, 22030001, BR</p>
+            <p>contato@alfaeomegatecnologia.com</p>
           </div>
         </AddressWrapper>
         <ContactWrapper>

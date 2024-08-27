@@ -9,6 +9,7 @@ export const globalStyles = globalCss({
 
   a: {
     textDecoration: 'none',
+    color: 'black',
   },
 
   p: {
@@ -66,9 +67,10 @@ export const globalStyles = globalCss({
 export const Button = styled('button', {
   width: 'fit-content',
   padding: '1rem',
-  fontSize: '1rem',
+  fontSize: '2rem',
   cursor: 'pointer',
   transition: 'all 0.3s',
+  border: '1px solid transparent',
 
   variants: {
     variantType: {
@@ -88,6 +90,7 @@ export const Button = styled('button', {
         '&:hover': {
           background: 'black',
           color: 'white',
+          border: '1px solid white',
         },
       },
     },
@@ -109,6 +112,9 @@ export const Wrapper = styled('section', {
       },
       black: {
         background: 'black',
+      },
+      gray: {
+        background: '#161616',
       },
     },
   },

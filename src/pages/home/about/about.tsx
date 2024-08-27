@@ -4,7 +4,7 @@ import { AboutDetails, AboutWrapper, ProfileWrapper } from './style.ts'
 
 export function About() {
   return (
-    <AboutWrapper background={'black'}>
+    <AboutWrapper background={'gray'}>
       <div>
         <ProfileWrapper>
           <picture>

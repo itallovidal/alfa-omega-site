@@ -3,6 +3,7 @@ import { About } from './about/about.tsx'
 import { ServicesDetails } from './servicesDetails/services-details.tsx'
 import { Services } from './services/services.tsx'
 import { TechInfo } from './tech-info/tech-info.tsx'
+import { Course } from './course/course.tsx'
 
 export function Home() {
   return (
@@ -10,6 +11,7 @@ export function Home() {
       <TechInfo />
       <Services />
       <ServicesDetails />
+      <Course />
       <About />
     </div>
   )

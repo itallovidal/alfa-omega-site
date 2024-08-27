@@ -3,7 +3,7 @@ import { Wrapper } from '../../styles'
 
 export const FooterWrapper = styled(Wrapper, {
   width: '100%',
-  padding: '2rem',
+  padding: '6rem',
   background: 'white',
 
   '& > div': {
@@ -33,7 +33,7 @@ export const AddressWrapper = styled('div', {
 
 export const ContactWrapper = styled('div', {
   display: 'flex',
-  justifyContent: 'space-between',
+  gap: '1rem',
   flexDirection: 'column',
   alignItems: 'flex-end',
   color: 'black',
