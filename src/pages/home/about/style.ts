@@ -7,15 +7,8 @@ export const AboutDetails = styled('div', {
   color: 'white',
   padding: '2rem',
 
-  h1: {
-    fontSize: '4rem',
-    fontWeight: 'normal',
-  },
 
-  p: {
-    fontSize: '1.2rem',
-    lineHeight: '2rem',
-  },
+
 })
 
 export const ProfileWrapper = styled('div', {

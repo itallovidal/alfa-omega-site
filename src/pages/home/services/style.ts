@@ -5,14 +5,8 @@ export const ServicesWrapper = styled(Wrapper, {
   color: 'white',
 
   '& > div': {
-    gap: '2rem',
     flexDirection: 'column',
     alignItems: 'center',
-
-    h1: {
-      fontSize: '4rem',
-      fontWeight: 'normal',
-    },
   },
 })
 

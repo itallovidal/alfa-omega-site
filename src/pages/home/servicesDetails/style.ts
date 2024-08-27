@@ -22,13 +22,7 @@ export const ServiceBox = styled('div', {
 
   width: 'calc(50% - .5rem)',
 
-  h2: {
-    fontSize: '2rem',
-    fontWeight: 'normal',
-  },
-
   p: {
     marginBlock: '1.4rem',
-    lineHeight: '1.6rem',
   },
 })

@@ -11,6 +11,23 @@ export const globalStyles = globalCss({
     textDecoration: 'none',
   },
 
+  p: {
+    fontSize: '1.2rem',
+    lineHeight: '2rem',
+  },
+
+  h1: {
+    fontSize: '4rem',
+    fontWeight: 'normal',
+    marginBottom: '2rem',
+  },
+
+  h2: {
+    fontSize: '2rem',
+    fontWeight: 'normal',
+    marginBottom: '2rem',
+  },
+
   '*:link, *:active': {
     textDecoration: 'none',
   },
