@@ -6,12 +6,20 @@ export const FooterWrapper = styled(Wrapper, {
   padding: '6rem',
   background: 'white',
 
+  '@mobile': {
+    padding: '2rem',
+  },
+
   '& > div': {
     maxWidth: '68.75rem',
     width: '100%',
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
+
+    '@mobile': {
+      flexDirection: 'column',
+    },
   },
 
   picture: {
@@ -37,4 +45,8 @@ export const ContactWrapper = styled('div', {
   flexDirection: 'column',
   alignItems: 'flex-end',
   color: 'black',
+
+  '@mobile': {
+    alignItems: 'flex-start',
+  },
 })

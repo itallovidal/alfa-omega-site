@@ -7,6 +7,10 @@ export const ServicesWrapper = styled(Wrapper, {
   '& > div': {
     flexDirection: 'column',
     alignItems: 'center',
+
+    '@mobile': {
+      paddingBlock: '2rem',
+    },
   },
 })
 
@@ -29,5 +33,23 @@ export const ServiceList = styled('div', {
 
   'div span:first-child:before': {
     content: '',
+  },
+
+  '@mobile': {
+    justifyContent: 'flex-start',
+    padding: '1rem',
+    span: {
+      fontSize: '1.4rem',
+      fontWeight: 'normal',
+    },
+
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+
+    'div span:first-child:before': {
+      content: '•',
+    },
   },
 })

@@ -62,6 +62,22 @@ export const globalStyles = globalCss({
       maxHeight: '100%',
     },
   },
+
+  '@mobile': {
+    p: {
+      fontSize: '1rem',
+    },
+
+    h1: {
+      fontSize: '2rem',
+      marginBottom: '1.2rem',
+    },
+
+    h2: {
+      fontSize: '1.5rem',
+      marginBottom: '1rem',
+    },
+  },
 })
 
 export const Button = styled('button', {
@@ -104,6 +120,10 @@ export const Button = styled('button', {
 export const Wrapper = styled('section', {
   width: '100%',
   padding: '5rem',
+
+  '@mobile': {
+    padding: '1rem',
+  },
 
   variants: {
     background: {

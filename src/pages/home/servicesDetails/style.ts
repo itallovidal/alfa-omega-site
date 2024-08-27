@@ -5,6 +5,10 @@ export const BoxWrapper = styled('div', {
   display: 'flex',
   flexWrap: 'wrap',
   gap: '1rem',
+
+  '@mobile': {
+    flexDirection: 'column',
+  },
 })
 
 export const ServicesWrapper = styled(Wrapper, {
@@ -19,8 +23,11 @@ export const ServiceBox = styled('div', {
   backgroundColor: 'black',
   padding: '1.4rem',
   color: 'white',
-
   width: 'calc(50% - .5rem)',
+
+  '@mobile': {
+    width: '100%',
+  },
 
   p: {
     marginBlock: '1.4rem',

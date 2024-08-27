@@ -7,6 +7,13 @@ export const TechInfoWrapper = styled(Wrapper, {
 
   '& > div': {
     gap: '5rem',
+
+    '@mobile': {
+      flexDirection: 'column',
+      '#reversed': {
+        flexDirection: 'column-reverse !important',
+      },
+    },
   },
 })
 
@@ -16,6 +23,11 @@ export const Tech = styled('div', {
   flexDirection: 'column',
   width: 'calc(50% - .5rem)',
   gap: '3rem',
+
+  '@mobile': {
+    width: '100%',
+    gap: '3rem',
+  },
 
   '& > div': {
     display: 'flex',

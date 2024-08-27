@@ -23,7 +23,7 @@ export const TechInfo = forwardRef<HTMLDivElement>((_, ref) => {
           </picture>
         </Tech>
 
-        <Tech>
+        <Tech id={'reversed'}>
           <picture>
             <img src={Tech1} alt="" />
           </picture>

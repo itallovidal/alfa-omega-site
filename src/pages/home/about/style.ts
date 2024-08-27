@@ -1,14 +1,22 @@
 import { styled } from '../../../styles/theme.ts'
 import { Wrapper } from '../../../styles'
 
-export const AboutWrapper = styled(Wrapper, {})
+export const AboutWrapper = styled(Wrapper, {
+  '@mobile': {
+    '& > div': {
+      flexDirection: 'column',
+    },
+  },
+})
 
 export const AboutDetails = styled('div', {
   color: 'white',
   padding: '2rem',
 
-
-
+  p: {
+    textAlign: 'justify',
+    wordBreak: 'break-all',
+  },
 })
 
 export const ProfileWrapper = styled('div', {
