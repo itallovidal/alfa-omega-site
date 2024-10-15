@@ -42,6 +42,10 @@ export const WrapperMobile = styled('div', {
   top: '0',
   zIndex: 100,
 
+  '@desktop': {
+    display: 'none',
+  },
+
   variants: {
     display: {
       open: {
