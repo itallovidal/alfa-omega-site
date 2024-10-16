@@ -6,6 +6,7 @@ import { TechInfo } from './tech-info/tech-info.tsx'
 import { Course } from './course/course.tsx'
 import { Hero } from './hero/hero.tsx'
 import { useLocation } from 'react-router-dom'
+import { Team } from './team/team.tsx'
 
 export function Home() {
   const { hash } = useLocation()
@@ -15,6 +16,7 @@ export function Home() {
   const servicesDetailsRef = useRef<HTMLDivElement>(null)
   const courseRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
+  const teamRef = useRef<HTMLDivElement>(null)
 
   const refMap = {
     '#home': heroRef,
@@ -23,13 +25,12 @@ export function Home() {
     '#serviceDetails': servicesDetailsRef,
     '#course': courseRef,
     '#about': aboutRef,
+    '#team': teamRef,
   }
 
   useEffect(() => {
     const element = refMap[hash as keyof typeof refMap]
-
     if (hash && element && element.current) {
-      console.log('opa')
       element.current.scrollIntoView({ behavior: 'smooth' })
     }
   }, [hash])
@@ -42,6 +43,7 @@ export function Home() {
       <ServicesDetails ref={servicesDetailsRef} />
       <Course ref={courseRef} />
       <About ref={aboutRef} />
+      <Team ref={teamRef} />
     </div>
   )
 }
