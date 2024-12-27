@@ -4,7 +4,7 @@ import { Home } from './home'
 
 export function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'/'}>
       <Routes>
         <Route path="/" Component={AppLayout}>
           <Route path={'/'} Component={Home} />
